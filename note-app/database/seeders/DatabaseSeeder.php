@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\Note;
+use App\Models\Todo;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -28,5 +29,7 @@ class DatabaseSeeder extends Seeder
 
         // Создаем 100 заметок для теста
         Note::factory(100)->create();
+
+        Todo::factory(100)->create();
     }
 }
