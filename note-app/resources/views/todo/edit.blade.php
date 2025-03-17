@@ -1,3 +1,3 @@
-<div>
-    <h1>EDITT</h1>
-</div>
+<x-layout>
+    <h1>edit</h1>
+</x-layout>

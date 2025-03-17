@@ -1,3 +1,3 @@
-<div>
-    <h1>INDEDEX</h1>
-</div>
+<x-layout>
+    <h1>index</h1>
+</x-layout>

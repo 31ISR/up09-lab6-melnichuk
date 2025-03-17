@@ -1,3 +1,3 @@
-<div>
-    <h1>SHOWWWW</h1>
-</div>
+<x-layout>
+    <h1>showw</h1>
+</x-layout>
