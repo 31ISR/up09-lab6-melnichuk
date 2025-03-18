@@ -1,18 +1,18 @@
 <x-layout>
     <div>
-        <a href="{{ route('note.create') }}" >
+        <a href="{{ route('note.create') }}" class="create">
             New Note
         </a>
-        <div>
+        <div class="notes">
             @foreach ($notes as $note)
-                <div>
-                    <div>
+                <div class="note">
+                    <div class="prew">
                         {{ Str::words($note->note, 30) }}
                     </div>
-                    <div>
-                        <a href="{{ route('note.show', $note) }}" >View</a>
-                        <a href="{{ route('note.edit', $note) }}" >Edit</a>
-                        <form action="{{ route('note.destroy', $note) }}" method="POST">
+                    <div class="actions">
+                        <a href="{{ route('note.show', $note) }}" class="show">View</a>
+                        <a href="{{ route('note.edit', $note) }}" class="edit">Edit</a>
+                        <form action="{{ route('note.destroy', $note) }}" method="POST" class="delete">
                             @csrf
                             @method('DELETE')
                             <button >Delete</button>
@@ -22,7 +22,7 @@
             @endforeach
         </div>
 
-        <div >
+        <div class="pages">
             {{ $notes->links() }}
         </div>
     </div>

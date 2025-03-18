@@ -17,6 +17,7 @@ return new class extends Migration
             $table->boolean('done');
             $table->boolean('urgent');
             $table->dateTime('dateCompleted');
+            $table->dateTime('updated_at');
         });
     }
 
